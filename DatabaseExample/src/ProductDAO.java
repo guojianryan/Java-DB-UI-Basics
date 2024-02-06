@@ -27,9 +27,10 @@ public class ProductDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
-            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
             if(set != null) try {set.close();} catch(Exception e) {e.printStackTrace();}
+            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
+        
         }
         return null;
     }
@@ -59,9 +60,9 @@ public class ProductDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
-            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
             if(set != null) try {set.close();} catch(Exception e) {e.printStackTrace();}
+            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
         }
         return null;
     }
@@ -85,8 +86,8 @@ public class ProductDAO {
             e.printStackTrace();
             return false;
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
             if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
         }
     }
     public static boolean updateProduct(Product prod) {
@@ -108,8 +109,8 @@ public class ProductDAO {
             e.printStackTrace();
             return false;
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
             if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
         }
     }
     public static boolean deleteProduct(int id){
@@ -128,8 +129,8 @@ public class ProductDAO {
             e.printStackTrace();
             return false;
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
             if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
         }
     }
 
@@ -158,9 +159,9 @@ public class ProductDAO {
             e.printStackTrace();
             return null;
         } finally {
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
-            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
             if(set != null) try {set.close();} catch(Exception e) {e.printStackTrace();}
+            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
         }
     }
 
