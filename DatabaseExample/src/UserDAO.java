@@ -46,9 +46,10 @@ public class UserDAO{
         } finally {
             // "finally" is guaranteed to be executed.
             // So it is a good place to make sure the resources are closed.
-            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
-            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
             if(set != null) try {set.close();} catch(Exception e) {e.printStackTrace();}
+            if(stmt != null) try {stmt.close();} catch(Exception e) {e.printStackTrace();}
+            if(conn != null) try {conn.close();} catch(Exception e) {e.printStackTrace();}
+
         }
         return user;
     }
